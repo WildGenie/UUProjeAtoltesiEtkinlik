@@ -20,7 +20,7 @@ namespace UUNotsis
 
         private void OgrenciDuzenle_Load(object sender, EventArgs e)
         {
-            this.Listele();
+            Listele();
 
         }
 
@@ -28,12 +28,27 @@ namespace UUNotsis
 
         void Listele()
         {
-            SqlDataAdapter dataAdapter = new SqlDataAdapter("Select * From Ogrenci", this.baglanti);
+            SqlDataAdapter dataAdapter = new SqlDataAdapter("Select * From Ogrenci", baglanti);
             DataTable dataTable = new DataTable();
             dataAdapter.Fill(dataTable);
             dataGridView.DataSource = dataTable;
 
         }
 
+        private void buttonKaydet_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand(
+                "insert into Ogrenci (Ad, Soyad, Numara, Sifre) values (@ad, @soyad, @numara, @sifre)",
+                baglanti);
+            komut.Parameters.AddWithValue("@ad", textBoxAd.Text);
+            komut.Parameters.AddWithValue("@soyad", textBoxSoyAd.Text);
+            komut.Parameters.AddWithValue("@numara", maskedTextBoxNumara.Text);
+            komut.Parameters.AddWithValue("@sifre", textBoxSifre.Text);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Öğrenci Kaydı Tamamlandı", "UUNOTSIS Bildirim",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            this.Listele();
+        }
     }
 }

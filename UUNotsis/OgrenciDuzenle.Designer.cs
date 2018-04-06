@@ -69,9 +69,11 @@
             // 
             this.maskedTextBoxNumara.Location = new System.Drawing.Point(85, 20);
             this.maskedTextBoxNumara.Margin = new System.Windows.Forms.Padding(2);
+            this.maskedTextBoxNumara.Mask = "00000";
             this.maskedTextBoxNumara.Name = "maskedTextBoxNumara";
             this.maskedTextBoxNumara.Size = new System.Drawing.Size(221, 23);
             this.maskedTextBoxNumara.TabIndex = 1;
+            this.maskedTextBoxNumara.ValidatingType = typeof(int);
             // 
             // textBoxAd
             // 
@@ -106,6 +108,7 @@
             this.buttonKaydet.TabIndex = 8;
             this.buttonKaydet.Text = "Kaydet";
             this.buttonKaydet.UseVisualStyleBackColor = true;
+            this.buttonKaydet.Click += new System.EventHandler(this.buttonKaydet_Click);
             // 
             // label
             // 
