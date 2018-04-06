@@ -197,7 +197,7 @@
             this.pictureBoxResim.TabIndex = 14;
             this.pictureBoxResim.TabStop = false;
             // 
-            // Form2
+            // OgrenciDurum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -220,8 +220,9 @@
             this.Controls.Add(this.labelNumara);
             this.Font = new System.Drawing.Font("Lucida Console", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
-            this.Name = "Form2";
+            this.Name = "OgrenciDurum";
             this.Text = "Öğrenci Durum";
+            this.Load += new System.EventHandler(this.OgrenciDurum_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxResim)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

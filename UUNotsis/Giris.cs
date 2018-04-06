@@ -17,5 +17,34 @@ namespace UUNotsis
             InitializeComponent();
         }
 
+        SqlConnection baglanti = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=UUNOTSIS;Integrated Security=True");
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("Select * From Ogrenci Where Numara=@no and Sifre=@sifre", baglanti);
+
+            komut.Parameters.AddWithValue("@no", maskedTextBoxNumara.Text);
+            komut.Parameters.AddWithValue("@sifre", textBoxSifre.Text);
+
+            SqlDataReader dataReader = komut.ExecuteReader();
+
+            if (dataReader.Read())
+            {
+                OgrenciDurum ogrenciDurum = new OgrenciDurum();
+                ogrenciDurum.numara = maskedTextBoxNumara.Text;
+                ogrenciDurum.Show();
+            }
+            else
+            {
+                MessageBox.Show(
+                    "Kullanıcı adı şifre hatalı",
+                    "Notsis Bilgilendirme",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+
+            baglanti.Close();
+        }
     }
 }

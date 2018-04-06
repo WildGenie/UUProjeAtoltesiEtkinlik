@@ -25,5 +25,12 @@ namespace UUNotsis
         {
 
         }
+
+        public string numara;
+
+        private void OgrenciDurum_Load(object sender, EventArgs e)
+        {
+            labelNumara.Text = numara;
+        }
     }
 }
