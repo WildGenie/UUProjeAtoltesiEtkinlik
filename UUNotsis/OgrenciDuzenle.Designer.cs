@@ -39,7 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonGuncelle = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxDurum = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -53,8 +53,8 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.panel = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.groupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -171,7 +171,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.buttonGuncelle);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textBoxDurum);
             this.groupBox1.Controls.Add(this.label5);
@@ -187,18 +187,19 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(420, 147);
-            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
-            // button1
+            // buttonGuncelle
             // 
-            this.button1.Location = new System.Drawing.Point(310, 15);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 115);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Güncelle";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonGuncelle.Location = new System.Drawing.Point(310, 15);
+            this.buttonGuncelle.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonGuncelle.Name = "buttonGuncelle";
+            this.buttonGuncelle.Size = new System.Drawing.Size(106, 115);
+            this.buttonGuncelle.TabIndex = 9;
+            this.buttonGuncelle.Text = "Güncelle";
+            this.buttonGuncelle.UseVisualStyleBackColor = true;
+            this.buttonGuncelle.Click += new System.EventHandler(this.buttonGuncelle_Click);
             // 
             // label4
             // 
@@ -295,8 +296,8 @@
             this.groupBox2.Controls.Add(this.dataGridView);
             this.groupBox2.Location = new System.Drawing.Point(12, 319);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(975, 258);
-            this.groupBox2.TabIndex = 2;
+            this.groupBox2.Size = new System.Drawing.Size(975, 216);
+            this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             // 
             // dataGridView
@@ -305,8 +306,9 @@
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.Location = new System.Drawing.Point(3, 19);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(969, 236);
+            this.dataGridView.Size = new System.Drawing.Size(969, 194);
             this.dataGridView.TabIndex = 0;
+            this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
             // panel
             // 
@@ -319,16 +321,6 @@
             this.panel.Size = new System.Drawing.Size(997, 161);
             this.panel.TabIndex = 0;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Lucida Console", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(114, 41);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(870, 32);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Uludağ Üniversitesi Notsis Akademisyen Paneli";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -339,6 +331,16 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Lucida Console", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(114, 41);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(870, 32);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Uludağ Üniversitesi Notsis Akademisyen Paneli";
             // 
             // pictureBox
             // 
@@ -396,7 +398,7 @@
         private System.Windows.Forms.TextBox textBoxSinav3;
         private System.Windows.Forms.TextBox textBoxSinav2;
         private System.Windows.Forms.TextBox textBoxSinav1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonGuncelle;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
