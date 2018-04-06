@@ -92,7 +92,7 @@ namespace UUNotsis
             // Güncelleme İşlemi
 
             baglanti.Open();
-            var komut = new SqlCommand("Update Ogrenci set Ad=@ad, Soyad=@soyad, sifre=@sifre, Sinav1=@s1, Sinav2=@s2, Sinav3=@s3, Ortalama=@ort where numara=@no", baglanti);
+            var komut = new SqlCommand("Update Ogrenci set Ad=@ad, Soyad=@soyad, sifre=@sifre, Sinav1=@s1, Sinav2=@s2, Sinav3=@s3, Ortalama=@ort, Durum=@durum where numara=@no", baglanti);
             komut.Parameters.AddWithValue("@ad", textBoxAd.Text);
             komut.Parameters.AddWithValue("@soyad", textBoxSoyAd.Text);
             komut.Parameters.AddWithValue("@sifre", textBoxSifre.Text);
@@ -101,6 +101,16 @@ namespace UUNotsis
             komut.Parameters.AddWithValue("@s3", int.Parse(textBoxSinav3.Text));
             komut.Parameters.AddWithValue("@ort", decimal.Parse(textBoxOrtalama.Text));
             komut.Parameters.AddWithValue("@no", maskedTextBoxNumara.Text);
+
+            if (textBoxDurum.Text == "Geçti")
+            {
+                komut.Parameters.AddWithValue("@durum", true);
+            }
+            else
+            {
+                komut.Parameters.AddWithValue("@durum", false);
+            }
+
             komut.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Notlar Güncellendi", "Notsis Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);

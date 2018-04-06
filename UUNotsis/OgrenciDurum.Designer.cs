@@ -191,7 +191,7 @@
             // pictureBoxResim
             // 
             this.pictureBoxResim.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBoxResim.Location = new System.Drawing.Point(309, 0);
+            this.pictureBoxResim.Location = new System.Drawing.Point(425, 0);
             this.pictureBoxResim.Name = "pictureBoxResim";
             this.pictureBoxResim.Size = new System.Drawing.Size(208, 232);
             this.pictureBoxResim.TabIndex = 14;
@@ -202,7 +202,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SandyBrown;
-            this.ClientSize = new System.Drawing.Size(517, 232);
+            this.ClientSize = new System.Drawing.Size(633, 232);
             this.Controls.Add(this.pictureBoxResim);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);

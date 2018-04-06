@@ -46,5 +46,15 @@ namespace UUNotsis
 
             baglanti.Close();
         }
+
+        private void textBoxSifre_TextChanged(object sender, EventArgs e)
+        {
+            if (textBoxSifre.Text == "00000")
+            {
+                OgrenciDuzenle ogrenciDuzenle = new OgrenciDuzenle();
+                ogrenciDuzenle.Show();
+                Hide();
+            }
+        }
     }
 }

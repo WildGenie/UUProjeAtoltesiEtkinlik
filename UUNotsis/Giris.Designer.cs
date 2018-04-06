@@ -110,6 +110,7 @@
             this.textBoxSifre.PasswordChar = '*';
             this.textBoxSifre.Size = new System.Drawing.Size(395, 26);
             this.textBoxSifre.TabIndex = 4;
+            this.textBoxSifre.TextChanged += new System.EventHandler(this.textBoxSifre_TextChanged);
             // 
             // buttonLogin
             // 
