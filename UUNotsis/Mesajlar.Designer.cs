@@ -109,6 +109,7 @@
             this.buttonGonder.TabIndex = 6;
             this.buttonGonder.Text = "Gönder";
             this.buttonGonder.UseVisualStyleBackColor = true;
+            this.buttonGonder.Click += new System.EventHandler(this.buttonGonder_Click);
             // 
             // Mesajlar
             // 
@@ -128,6 +129,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Name = "Mesajlar";
             this.Text = "Mesajlar";
+            this.Load += new System.EventHandler(this.Mesajlar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

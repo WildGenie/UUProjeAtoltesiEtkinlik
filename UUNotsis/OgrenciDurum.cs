@@ -71,5 +71,13 @@ namespace UUNotsis
             baglanti.Close();
 
         }
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            Mesajlar mesajlar = new Mesajlar();
+            mesajlar.numara = numara;
+            mesajlar.Show();
+
+        }
     }
 }
