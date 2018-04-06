@@ -19,3 +19,13 @@
 | Ortalama  | decimal(3, 2)  |
 | Durum  | bit  |
 | Fotograf  | varchar(100)  |
+
+**Mesaj Tablosu**
+
+| Alan Adı | Alan Tipi |
+| --- | --- |
+| Id | int |
+| Gonderen | char(5) |
+| Alici | char(5) |
+| Baslik | varchar(50) |
+| Icerik | varchar(250) |
