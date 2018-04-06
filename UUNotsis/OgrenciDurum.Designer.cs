@@ -43,6 +43,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBoxResim = new System.Windows.Forms.PictureBox();
+            this.button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxResim)).BeginInit();
             this.SuspendLayout();
             // 
@@ -190,6 +191,7 @@
             // 
             // pictureBoxResim
             // 
+            this.pictureBoxResim.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxResim.Dock = System.Windows.Forms.DockStyle.Right;
             this.pictureBoxResim.Location = new System.Drawing.Point(425, 0);
             this.pictureBoxResim.Name = "pictureBoxResim";
@@ -197,12 +199,22 @@
             this.pictureBoxResim.TabIndex = 14;
             this.pictureBoxResim.TabStop = false;
             // 
+            // button
+            // 
+            this.button.Location = new System.Drawing.Point(12, 180);
+            this.button.Name = "button";
+            this.button.Size = new System.Drawing.Size(407, 40);
+            this.button.TabIndex = 14;
+            this.button.Text = "Mesajlar";
+            this.button.UseVisualStyleBackColor = true;
+            // 
             // OgrenciDurum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SandyBrown;
             this.ClientSize = new System.Drawing.Size(633, 232);
+            this.Controls.Add(this.button);
             this.Controls.Add(this.pictureBoxResim);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -246,5 +258,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBoxResim;
+        private System.Windows.Forms.Button button;
     }
 }
