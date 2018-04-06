@@ -9,21 +9,11 @@ using System.Windows.Forms;
 
 namespace UUNotsis
 {
-    public partial class Form2 : Form
+    public partial class Giris : Form
     {
-        public Form2()
+        public Giris()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelAdSoyad_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

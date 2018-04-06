@@ -9,21 +9,11 @@ using System.Windows.Forms;
 
 namespace UUNotsis
 {
-    public partial class OgrenciDurum : Form
+    public partial class OgrenciDuzenle : Form
     {
-        public OgrenciDurum()
+        public OgrenciDuzenle()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelAdSoyad_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

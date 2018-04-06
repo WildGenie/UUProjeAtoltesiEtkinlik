@@ -15,7 +15,7 @@ namespace UUNotsis
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new OgrenciDurum());
+            Application.Run(new Giris());
         }
     }
 }
