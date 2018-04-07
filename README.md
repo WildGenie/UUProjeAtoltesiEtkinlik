@@ -6,6 +6,21 @@ Uludağ Üniversitesi Proje Atölyesi Programlama Etkinliğinin davetlisi Murat 
 
 ![Program Geliştirme Etkinliği](ProgramGeli%C5%9FtirmeEtkinli%C4%9Fi.jpg)
 
+## Proje Kapsamında Yapılan Sunum İçeriği
+Yaklaşık 5 saatlik bir sürede geliştirdiğimiz öğrenci sınav not sisteminde şu başlıkları anlatıldı;  
+- Use Case Diyagram oluşturma  
+- DML komutları  
+- Form araçları  
+- Class / Object / Property Kavramı  
+- Formlar arası veri taşıma işlemleri  
+- Erişim Belirleyici kavramı  
+- Şartlı sorgulamalar  
+- User Login Control  
+- Kullanıcılar arası mesajlaşma sistemi  
+- Select, Insert, Delete, Update sorgulamaları 
+
+5 saatin sonunda Murat Hocamızın sunumu, 20 civarında öğrenci ve çalışan arkadaşın katılımıyla geliştirmeye çok müsait bir projemizi oluşturmuş olduk
+
 ## Use Case Diagram
 ![Use Case Diagram](NotsisUseCaseDiagram.png)
 
